@@ -1,0 +1,20 @@
+First assignment:
+	google serach frank pound
+	go to apollo website
+	find marine corps icon
+	highlight it
+	
+Text xpath:
+	//h3[contains(text(),'Apollo - Apollo.io')]
+	
+Scroll into view:
+	je.executeScript("arguments[0].scrollIntoView(true)", apolloLink);
+	
+Second assignment:
+	find 3 search engines for a phrase
+	count total results
+	store results in a hashmap (mange strings, integers, strings & strings)
+	open the one with the most results
+	
+Remove all text, but keep commas: 
+	replaceAll("[^0-9\\,]+","");	

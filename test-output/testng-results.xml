@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15719" started-at="2020-03-25T23:14:35 EDT" finished-at="2020-03-25T23:14:50 EDT">
+  <suite name="Default suite" duration-ms="23588" started-at="2020-04-07T23:29:17 EDT" finished-at="2020-04-07T23:29:40 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15719" started-at="2020-03-25T23:14:35 EDT" finished-at="2020-03-25T23:14:50 EDT">
-      <class name="Interview.PoundTestNG">
-        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:Interview.PoundTestNG@6737fd8f]" name="initializeWebDriver" is-config="true" duration-ms="3748" started-at="2020-03-25T23:14:31 EDT" finished-at="2020-03-25T23:14:35 EDT">
+    <test name="Default test" duration-ms="23588" started-at="2020-04-07T23:29:17 EDT" finished-at="2020-04-07T23:29:40 EDT">
+      <class name="Interview.PoundSearchTNG">
+        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="initializeWebDriver" is-config="true" duration-ms="3833" started-at="2020-04-07T23:29:13 EDT" finished-at="2020-04-07T23:29:17 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeWebDriver -->
-        <test-method status="PASS" signature="bingTest()[pri:0, instance:Interview.PoundTestNG@6737fd8f]" name="bingTest" duration-ms="2715" started-at="2020-03-25T23:14:35 EDT" finished-at="2020-03-25T23:14:37 EDT">
+        <test-method status="PASS" signature="bingTest()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="bingTest" duration-ms="5439" started-at="2020-04-07T23:29:17 EDT" finished-at="2020-04-07T23:29:22 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bingTest -->
-        <test-method status="PASS" signature="googleTest()[pri:0, instance:Interview.PoundTestNG@6737fd8f]" name="googleTest" duration-ms="6813" started-at="2020-03-25T23:14:37 EDT" finished-at="2020-03-25T23:14:44 EDT">
+        <test-method status="PASS" signature="googleTest()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="googleTest" duration-ms="5945" started-at="2020-04-07T23:29:22 EDT" finished-at="2020-04-07T23:29:28 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleTest -->
-        <test-method status="PASS" signature="wikiTest()[pri:0, instance:Interview.PoundTestNG@6737fd8f]" name="wikiTest" duration-ms="4488" started-at="2020-03-25T23:14:44 EDT" finished-at="2020-03-25T23:14:49 EDT">
+        <test-method status="PASS" signature="wikiTest()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="wikiTest" duration-ms="10341" started-at="2020-04-07T23:29:28 EDT" finished-at="2020-04-07T23:29:38 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wikiTest -->
-        <test-method status="PASS" signature="hashTest()[pri:4, instance:Interview.PoundTestNG@6737fd8f]" name="hashTest" duration-ms="1612" started-at="2020-03-25T23:14:49 EDT" finished-at="2020-03-25T23:14:50 EDT">
+        <test-method status="PASS" signature="hashTest()[pri:4, instance:Interview.PoundSearchTNG@63e2203c]" name="hashTest" duration-ms="1750" started-at="2020-04-07T23:29:38 EDT" finished-at="2020-04-07T23:29:40 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hashTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:Interview.PoundTestNG@6737fd8f]" name="closeDriver" is-config="true" duration-ms="2116" started-at="2020-03-25T23:14:50 EDT" finished-at="2020-03-25T23:14:53 EDT">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="closeDriver" is-config="true" duration-ms="182" started-at="2020-04-07T23:29:40 EDT" finished-at="2020-04-07T23:29:40 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- Interview.PoundTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Interview.PoundSearchTNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -100,13 +100,6 @@ public class PoundSearchOrder {
 }
 
 /*
-remove all text, but keep commas: replaceAll("[^0-9\\,]+",""); 
- 
-driver.get("https://www.msn.com");
-driver.findElement(By.id("header-search-input")).sendKeys("Frank Pound" + Keys.ENTER);
-String yahoo = driver.findElement(By.xpath("//div[@class='compPagination']/span")).getText();
-System.out.println(yahoo); 
- 
  //int maxMap = (Collections.max(map.values()));
  //Entry<String, int> maxEntry = Collections.max(map.entrySet(), )
  /*map.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1 : -1).get().getValue();

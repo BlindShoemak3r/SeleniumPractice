@@ -2,7 +2,9 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="Interview.PoundTestNG"/>
+      <class name="Interview.PoundSearchTNG"/>
+      <class name="Interview.AppTNG"/>
+      <class name="Interview.FizzBuzzTNG"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,8 +1,12 @@
 package Interview;
 
-public class FizzBuzz {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public class FizzBuzzTNG {
+	
+	@Test
+	public void fizzBuzz() {
+
 		int i = 1;
 		
 		//Using the modulus operator, if the remainder is zero, i is therefore divisible
@@ -19,7 +23,6 @@ public class FizzBuzz {
 			
 			i++;
 		}
-
+	  
 	}
-
 }

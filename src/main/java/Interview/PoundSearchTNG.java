@@ -16,8 +16,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-public class PoundTestNG {
+public class PoundSearchTNG {
   
+  //Public variables that can be used for any below methods
   public WebDriver driver;
   public static int i = 0;
   public static String fileParth = "C:\\My Stuff\\Learning Selenium\\Screenshots\\PoundSearch\\pic";
@@ -29,12 +30,15 @@ public class PoundTestNG {
   public int bing;
   public int wiki;
 	
+  //Initialize and declare new ChromeDriver FIRST
   @BeforeSuite
   public void initializeWebDriver() {
 	  System.setProperty("webdriver.chrome.driver", "C:\\My Stuff\\Learning Selenium\\chromedriver.exe");
 	  driver = new ChromeDriver();
   }
 	
+  //Google search "Frank Pound" + retrieve the number of search results + remove
+  //extraneous data (time it took search to complete) + convert string to integer
   @Test
   public void googleTest() throws Exception {
 	  driver.get(googleWebpage);
@@ -45,6 +49,8 @@ public class PoundTestNG {
 	  google = stringConvert(googleRemoveText);
   }
   
+  //Bing search "Frank Pound" + retrieve the number of search results + remove
+  //extraneous data (time it took search to complete) + convert string to integer
   @Test 
   public void bingTest() throws Exception {
 	  driver.get(bingWebpage);
@@ -54,6 +60,8 @@ public class PoundTestNG {
 	  bing = stringConvert(bingText);
   }
   
+  //Wikipedia search "Frank Pound" + retrieve the number of search results + remove
+  //extraneous data (time it took search to complete) + convert string to integer
   @Test 
   public void wikiTest() throws Exception {
 	  driver.get(wikiWebpage);
@@ -63,6 +71,8 @@ public class PoundTestNG {
 	  wiki = stringConvert(wikiText);
   }
   
+  //Run this test 4th, w/o the priority it will run before wikiTest
+  //See below for detailed explanation
   @Test (priority=4)
   public void hashTest() throws Exception {
 	    HashMap<String, Integer> map = new HashMap<>(); 
@@ -71,7 +81,7 @@ public class PoundTestNG {
 		map.put(bingWebpage, bing); 
 		map.put(wikiWebpage, wiki);
 		 
-		Map.Entry<String, Integer> maxEntry = null;
+		Map.Entry<String, Integer> maxEntry = null; //stand alone entry
 
 		for (Map.Entry<String, Integer> entry : map.entrySet()) {
 		    if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) >= 0) {
@@ -84,11 +94,13 @@ public class PoundTestNG {
 		takeSnapShot(driver, fileParth + i + fileType);
   }
   
+  //After all tests have completed, close the webdriver window
   @AfterSuite
   public void closeDriver() {
 	  driver.close();
   }
 
+  //Screenshot method
   public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception {
 	  TakesScreenshot scrShot =((TakesScreenshot)webdriver);
 	  File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
@@ -97,9 +109,23 @@ public class PoundTestNG {
 	  i++;
   }
   
+  //Regex to remove all commas from a string, but keeping the numbers
   public static int stringConvert(String numbers) {
 	  numbers = numbers.replaceAll("[^0-9]+","");
 	  return Integer.parseInt(numbers);
   }
 
 }
+
+/*
+
+Create HashMap with String (Key), Integer (Value) pair
+
+for loop completes for every entry in this set of entries.
+First loop: compare int google to null value, since using the compareTo method
+returns a positive 1, then maxEntry is the int google value.
+Second loop: compare int bing value to google value, since using the compareTo method
+returns a negative 1, then maxEntry is still the int google value.
+Process repeats for a third time, same outcome w/ int wiki value.
+
+*/
