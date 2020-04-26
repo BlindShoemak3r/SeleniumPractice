@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10925" started-at="2020-04-26T15:09:41 EDT" finished-at="2020-04-26T15:09:52 EDT">
+  <suite name="Suite" duration-ms="26435" started-at="2020-04-26T15:47:59 EDT" finished-at="2020-04-26T15:48:25 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10925" started-at="2020-04-26T15:09:41 EDT" finished-at="2020-04-26T15:09:52 EDT">
+    <test name="Test" duration-ms="26435" started-at="2020-04-26T15:47:59 EDT" finished-at="2020-04-26T15:48:25 EDT">
+      <class name="Interview.PoundSearchTNG">
+        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:Interview.PoundSearchTNG@5d76b067]" name="initializeWebDriver" is-config="true" duration-ms="3043" started-at="2020-04-26T15:47:56 EDT" finished-at="2020-04-26T15:47:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeWebDriver -->
+        <test-method status="PASS" signature="bingTest()[pri:0, instance:Interview.PoundSearchTNG@5d76b067]" name="bingTest" duration-ms="4040" started-at="2020-04-26T15:47:59 EDT" finished-at="2020-04-26T15:48:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bingTest -->
+        <test-method status="PASS" signature="googleTest()[pri:0, instance:Interview.PoundSearchTNG@5d76b067]" name="googleTest" duration-ms="8276" started-at="2020-04-26T15:48:03 EDT" finished-at="2020-04-26T15:48:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleTest -->
+        <test-method status="PASS" signature="wikiTest()[pri:0, instance:Interview.PoundSearchTNG@5d76b067]" name="wikiTest" duration-ms="4565" started-at="2020-04-26T15:48:11 EDT" finished-at="2020-04-26T15:48:16 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wikiTest -->
+        <test-method status="PASS" signature="hashTest()[pri:4, instance:Interview.PoundSearchTNG@5d76b067]" name="hashTest" duration-ms="1615" started-at="2020-04-26T15:48:16 EDT" finished-at="2020-04-26T15:48:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hashTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:Interview.PoundSearchTNG@5d76b067]" name="closeDriver" is-config="true" duration-ms="2098" started-at="2020-04-26T15:48:26 EDT" finished-at="2020-04-26T15:48:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- Interview.PoundSearchTNG -->
       <class name="Interview.AppTNG">
-        <test-method status="PASS" signature="initializeDrivers()[pri:0, instance:Interview.AppTNG@6c49835d]" name="initializeDrivers" is-config="true" duration-ms="3746" started-at="2020-04-26T15:09:38 EDT" finished-at="2020-04-26T15:09:41 EDT">
+        <test-method status="PASS" signature="initializeDrivers()[pri:0, instance:Interview.AppTNG@2a17b7b6]" name="initializeDrivers" is-config="true" duration-ms="3637" started-at="2020-04-26T15:47:52 EDT" finished-at="2020-04-26T15:47:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDrivers -->
-        <test-method status="PASS" signature="highlightImage()[pri:0, instance:Interview.AppTNG@6c49835d]" name="highlightImage" duration-ms="10375" started-at="2020-04-26T15:09:42 EDT" finished-at="2020-04-26T15:09:52 EDT">
+        <test-method status="PASS" signature="highlightImage()[pri:0, instance:Interview.AppTNG@2a17b7b6]" name="highlightImage" duration-ms="7445" started-at="2020-04-26T15:48:17 EDT" finished-at="2020-04-26T15:48:25 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- highlightImage -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:Interview.AppTNG@6c49835d]" name="screenshot" is-config="true" duration-ms="484" started-at="2020-04-26T15:09:52 EDT" finished-at="2020-04-26T15:09:52 EDT">
+        <test-method status="PASS" signature="screenshot()[pri:0, instance:Interview.AppTNG@2a17b7b6]" name="screenshot" is-config="true" duration-ms="393" started-at="2020-04-26T15:48:25 EDT" finished-at="2020-04-26T15:48:25 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Interview.AppTNG@6c49835d]" name="afterSuite" is-config="true" duration-ms="749" started-at="2020-04-26T15:09:52 EDT" finished-at="2020-04-26T15:09:53 EDT">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Interview.AppTNG@2a17b7b6]" name="afterSuite" is-config="true" duration-ms="748" started-at="2020-04-26T15:48:25 EDT" finished-at="2020-04-26T15:48:26 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- Interview.AppTNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Interview.FizzBuzzTNG">
+        <test-method status="PASS" signature="fizzBuzz()[pri:0, instance:Interview.FizzBuzzTNG@4f063c0a]" name="fizzBuzz" duration-ms="15" started-at="2020-04-26T15:48:25 EDT" finished-at="2020-04-26T15:48:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fizzBuzz -->
+      </class> <!-- Interview.FizzBuzzTNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
