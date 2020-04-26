@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Interview.AppTNG">
+      <class name="Interview.PoundSearchTNG">
         <methods>
-          <include name="highlightImage"/>
-          <include name="screenshot"/>
-          <include name="afterSuite"/>
-          <include name="initializeDrivers"/>
+          <include name="hashTest"/>
+          <include name="wikiTest"/>
+          <include name="closeDriver"/>
+          <include name="googleTest"/>
+          <include name="initializeWebDriver"/>
         </methods>
-      </class> <!-- Interview.AppTNG -->
+      </class> <!-- Interview.PoundSearchTNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
