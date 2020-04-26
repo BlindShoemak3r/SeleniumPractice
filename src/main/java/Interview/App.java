@@ -42,14 +42,22 @@ public class App
     	actions.perform();
     	
     	//Highlighting and outlining either the marine picture or text
+    	String imageFilePath = "C:\\My Stuff\\Learning Selenium\\Screenshots\\screenshot.png";
     	try {
-    		WebElement marineLogo = driver.findElement(By.xpath("//img[@src='https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5e548fc7f6ce870001e07271/picture']"));
+    		WebElement marineLogo = driver.findElement(By.xpath("//img[@src='https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5e98ac2e02ec0600011548b9/picture']"));
     		je.executeScript("arguments[0].setAttribute('style','background: yellow; border: 5px solid red;')", marineLogo);
-    		takeSnapShot(driver, "C:\\My Stuff\\Learning Selenium\\Screenshots\\screenshot.png");
+    		takeSnapShot(driver, imageFilePath);
     	} catch(Exception e) {
     		je.executeScript("arguments[0].setAttribute('style','background: yellow; border: 5px solid red;')", marine);
-    		takeSnapShot(driver, "C:\\My Stuff\\Learning Selenium\\Screenshots\\screenshot.png");
+    		takeSnapShot(driver, imageFilePath);
     	}
+    	File f = new File(imageFilePath);
+    	if (f.exists())
+    		System.out.println("Screenshot saved");
+    	else
+    		System.out.println("Screenshot not saved");
+    	
+    	driver.quit();
 
     }
     

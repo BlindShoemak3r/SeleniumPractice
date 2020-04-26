@@ -75,7 +75,7 @@ public class PoundSearchTNG {
   //See below for detailed explanation
   @Test (priority=4)
   public void hashTest() throws Exception {
-	    HashMap<String, Integer> map = new HashMap<>(); 
+	    HashMap<String, Integer> map = new HashMap<String, Integer>(); 
 
 		map.put(googleWebpage, google); 
 		map.put(bingWebpage, bing); 

@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23588" started-at="2020-04-07T23:29:17 EDT" finished-at="2020-04-07T23:29:40 EDT">
+  <suite name="Default suite" duration-ms="10925" started-at="2020-04-26T15:09:41 EDT" finished-at="2020-04-26T15:09:52 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23588" started-at="2020-04-07T23:29:17 EDT" finished-at="2020-04-07T23:29:40 EDT">
-      <class name="Interview.PoundSearchTNG">
-        <test-method status="PASS" signature="initializeWebDriver()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="initializeWebDriver" is-config="true" duration-ms="3833" started-at="2020-04-07T23:29:13 EDT" finished-at="2020-04-07T23:29:17 EDT">
+    <test name="Default test" duration-ms="10925" started-at="2020-04-26T15:09:41 EDT" finished-at="2020-04-26T15:09:52 EDT">
+      <class name="Interview.AppTNG">
+        <test-method status="PASS" signature="initializeDrivers()[pri:0, instance:Interview.AppTNG@6c49835d]" name="initializeDrivers" is-config="true" duration-ms="3746" started-at="2020-04-26T15:09:38 EDT" finished-at="2020-04-26T15:09:41 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeWebDriver -->
-        <test-method status="PASS" signature="bingTest()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="bingTest" duration-ms="5439" started-at="2020-04-07T23:29:17 EDT" finished-at="2020-04-07T23:29:22 EDT">
+        </test-method> <!-- initializeDrivers -->
+        <test-method status="PASS" signature="highlightImage()[pri:0, instance:Interview.AppTNG@6c49835d]" name="highlightImage" duration-ms="10375" started-at="2020-04-26T15:09:42 EDT" finished-at="2020-04-26T15:09:52 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bingTest -->
-        <test-method status="PASS" signature="googleTest()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="googleTest" duration-ms="5945" started-at="2020-04-07T23:29:22 EDT" finished-at="2020-04-07T23:29:28 EDT">
+        </test-method> <!-- highlightImage -->
+        <test-method status="PASS" signature="screenshot()[pri:0, instance:Interview.AppTNG@6c49835d]" name="screenshot" is-config="true" duration-ms="484" started-at="2020-04-26T15:09:52 EDT" finished-at="2020-04-26T15:09:52 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleTest -->
-        <test-method status="PASS" signature="wikiTest()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="wikiTest" duration-ms="10341" started-at="2020-04-07T23:29:28 EDT" finished-at="2020-04-07T23:29:38 EDT">
+        </test-method> <!-- screenshot -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:Interview.AppTNG@6c49835d]" name="afterSuite" is-config="true" duration-ms="749" started-at="2020-04-26T15:09:52 EDT" finished-at="2020-04-26T15:09:53 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wikiTest -->
-        <test-method status="PASS" signature="hashTest()[pri:4, instance:Interview.PoundSearchTNG@63e2203c]" name="hashTest" duration-ms="1750" started-at="2020-04-07T23:29:38 EDT" finished-at="2020-04-07T23:29:40 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hashTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:Interview.PoundSearchTNG@63e2203c]" name="closeDriver" is-config="true" duration-ms="182" started-at="2020-04-07T23:29:40 EDT" finished-at="2020-04-07T23:29:40 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- Interview.PoundSearchTNG -->
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Interview.AppTNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

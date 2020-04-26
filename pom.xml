@@ -20,11 +20,18 @@
     </dependency>
    
    <dependency>
-    <groupId>com.google.inject</groupId>
-    <artifactId>guice</artifactId>
-    <version>4.2.2</version>
-   </dependency> 
+     <groupId>com.google.inject</groupId>
+     <artifactId>guice</artifactId>
+     <version>4.2.2</version>
+   </dependency>
+   
+   <dependency>
+     <groupId>org.testng</groupId>
+     <artifactId>testng</artifactId>
+     <version>7.1.0</version>
+     <scope>test</scope>
+   </dependency>
+   
   
   </dependencies>
-
 </project>

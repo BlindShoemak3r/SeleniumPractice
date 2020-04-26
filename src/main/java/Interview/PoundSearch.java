@@ -53,7 +53,7 @@ public class PoundSearch {
 		int wiki = stringConvert(wikiText);
 		
 		//Create HashMap with String (Key), Integer (Value) pair
-		HashMap<String, Integer> map = new HashMap<>(); 
+		HashMap<String, Integer> map = new HashMap<String, Integer>(); 
 
 		map.put(googleWebpage, google); 
 		map.put(bingWebpage, bing); 

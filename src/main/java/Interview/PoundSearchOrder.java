@@ -48,7 +48,7 @@ public class PoundSearchOrder {
 		String wikiNumbers = wikiText.replaceAll("[^0-9]+","");
 		int wiki = Integer.parseInt(wikiNumbers);
 		
-		 HashMap<String, Integer> map = new HashMap<>(); 
+		 HashMap<String, Integer> map = new HashMap<String, Integer>(); 
 
 		 map.put("Google", google); 
 		 map.put("Bing", bing); 

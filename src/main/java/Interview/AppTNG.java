@@ -52,12 +52,13 @@ public class AppTNG {
     	WebElement marine = driver.findElement(By.xpath("//h5[contains(text(),'Marine')]"));
 		
 		//Scrolling to the marine text
-		actions.moveToElement(marine);
+		actions = new Actions(driver);
+    	actions.moveToElement(marine);
 		actions.perform();
     	
 		//Highlighting and outlining the marine picture
 		try {
-    		WebElement marineLogo = driver.findElement(By.xpath("//img[@src='https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5e548fc7f6ce870001e07271/picture']"));
+    		WebElement marineLogo = driver.findElement(By.xpath("//img[@src='https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5e98ac2e02ec0600011548b9/picture']"));
     		je.executeScript("arguments[0].setAttribute('style','background: yellow; border: 5px solid red;')", marineLogo);
     	} catch (Exception e) {
     		System.out.println("Image not loaded");
@@ -65,16 +66,23 @@ public class AppTNG {
     	}	
 	}
   
-	//Take screenshot
+	//Take screenshot & verify the screenshot exists
 	@AfterTest
 	public void screenshot() throws Exception {
-		takeSnapShot(driver, "C:\\My Stuff\\Learning Selenium\\Screenshots\\screenshot.png");
+		String imageFilePath = "C:\\My Stuff\\Learning Selenium\\Screenshots\\screenshot.png";
+		takeSnapShot(driver, imageFilePath);
+		
+		File f = new File(imageFilePath);
+		if (f.exists())
+			System.out.println("Screenshot saved");
+		else
+			System.out.println("Screenshot not saved");
 	}
 	
 	//Close WebDriver window
 	@AfterSuite
 	public void afterSuite() {
-		driver.close();
+		driver.quit();
 	}
 	
 	//Screenshot method
